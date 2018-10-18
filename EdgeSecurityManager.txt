@@ -1,0 +1,255 @@
+TimeCreated         Message
+-----------         -------
+18-10-2018 14:16:09 info: iotedged::app -- Starting Azure IoT Edge Security Daemon
+18-10-2018 14:16:09 info: iotedged::app -- Version - 1.0.3 (1ccb9b0728cd046f89a7d6eb0af000b3cbd7bb6a)
+18-10-2018 14:16:09 info: iotedged::app -- Using config file: C:\ProgramData\iotedge\config.yaml
+18-10-2018 14:16:09 info: iotedged::windows -- Starting iotedged service.
+18-10-2018 14:16:09 info: iotedged -- Using runtime network id azure-iot-edge
+18-10-2018 14:16:09 info: iotedged -- Initializing the module runtime...
+18-10-2018 14:16:09 info: iotedged -- Configuring certificates...
+18-10-2018 14:16:09 info: iotedged -- Transparent gateway certificates not found, operating in quick start mode...
+18-10-2018 14:16:09 info: iotedged -- Finished initializing the module runtime.
+18-10-2018 14:16:09 info: iotedged -- Configuring C:\ProgramData\iotedge as the home directory.
+18-10-2018 14:16:09 info: iotedged -- Initializing hsm...
+18-10-2018 14:16:09 info: iotedged -- Finished configuring certificates.
+18-10-2018 14:16:09 info: iotedged -- No change to configuration file detected.
+18-10-2018 14:16:09 info: iotedged -- Detecting if configuration file has changed...
+18-10-2018 14:16:09 info: iotedged -- Finished initializing hsm.
+18-10-2018 14:16:09 info: iotedged -- Provisioning edge device...
+18-10-2018 14:16:09 info: iotedged -- Obtaining workload CA succeeded.
+18-10-2018 14:16:09 info: iotedged -- Finished provisioning edge device.
+18-10-2018 14:16:09 info: provisioning::provisioning -- Manually provisioning device "WTR_PMP_DEVICE" in hub "XOR-Hub.azure-devices.net"
+18-10-2018 14:16:09 info: iotedged -- Starting management API...
+18-10-2018 14:16:09 info: iotedged -- Listening on http://10.0.75.1:15580/ with 1 thread for management API.
+18-10-2018 14:16:09 info: iotedged -- Starting workload API...
+18-10-2018 14:16:09 info: iotedged -- Listening on http://10.0.75.1:15581/ with 1 thread for workload API.
+18-10-2018 14:16:09 info: edgelet_core::watchdog -- Starting watchdog with 60 second frequency...
+18-10-2018 14:16:09 info: edgelet_core::watchdog -- Checking edge runtime status
+18-10-2018 14:16:09 info: edgelet_core::watchdog -- Edge runtime status is stopped, starting module now...
+18-10-2018 14:16:12 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:46:12.803321600 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 942 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 14:16:16 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:46:16.285651800 UTC] "GET /systeminfo?api-version=2018-06-28 HTTP/1.1" 200 OK 103 "-" "-" pid(any)
+18-10-2018 14:16:16 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:46:16.733928500 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/decrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1560 "-" "-" pid(any)
+18-10-2018 14:16:16 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:46:16.743829800 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/sign?api-version=2018-06-28 HTTP/1.1"
+                    200 OK 57 "-" "-" pid(any)
+18-10-2018 14:16:17 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:46:17.203141200 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 942 "-" "-" pid(any)
+18-10-2018 14:16:19 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:46:19.822159900 UTC] "GET /modules/edgeAgent/logs?api-version=2018-06-28&follow=true&tail=all HTTP/1.1" 200 OK
+                    - "-" "iotedge/0.1.0" pid(any)
+18-10-2018 14:17:09 info: edgelet_core::watchdog -- Checking edge runtime status
+18-10-2018 14:17:09 info: edgelet_core::watchdog -- Edge runtime is running.
+18-10-2018 14:18:01 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:01.674784400 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 600 "-" "-" pid(any)
+18-10-2018 14:18:02 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:02.120387300 UTC] "PUT /identities/%24edgeHub?api-version=2018-06-28 HTTP/1.1" 200 OK 98 "-" "-" pid(any)
+18-10-2018 14:18:02 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:02.402711100 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 96 "-" "-" pid(any)
+18-10-2018 14:18:02 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 14:18:02 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:02.764539300 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 14:18:04 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:04.136067400 UTC] "POST /modules?api-version=2018-06-28 HTTP/1.1" 409 Conflict 45 "-" "-" pid(any)
+18-10-2018 14:18:04 info: edgelet_http_mgmt::server::module::update -- Updating module edgeHub
+18-10-2018 14:18:09 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:09.261249200 UTC] "PUT /modules/edgeHub?api-version=2018-06-28 HTTP/1.1" 200 OK 913 "-" "-" pid(any)
+18-10-2018 14:18:09 info: edgelet_core::watchdog -- Checking edge runtime status
+18-10-2018 14:18:09 info: edgelet_core::watchdog -- Edge runtime is running.
+18-10-2018 14:18:09 warn: edgelet_utils::logging -- Container not found
+18-10-2018 14:18:09 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:09.663516 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 14:18:09 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:09.779769 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28 HTTP/1.1"
+                    200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:15 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:15.522209800 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 909 "-" "-" pid(any)
+18-10-2018 14:18:15 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:15.526513400 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:16 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:16.079536300 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 600 "-" "-" pid(any)
+18-10-2018 14:18:16 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:16.421793900 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 96 "-" "-" pid(any)
+18-10-2018 14:18:16 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:16.510823100 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 14:18:16 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 14:18:16 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:16.773476100 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 14:18:16 warn: edgelet_utils::logging -- Container not found
+18-10-2018 14:18:16 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:16.893164300 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:22 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:22.344207600 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 909 "-" "-" pid(any)
+18-10-2018 14:18:22 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:22.370211800 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:22 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:22.885217700 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 600 "-" "-" pid(any)
+18-10-2018 14:18:23 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:23.209959300 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 96 "-" "-" pid(any)
+18-10-2018 14:18:23 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:23.253993300 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 14:18:23 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 14:18:23 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:23.543852500 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 14:18:23 warn: edgelet_utils::logging -- Container not found
+18-10-2018 14:18:23 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:23.650473200 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:28 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:28.739355600 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:28 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:28.742356900 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 909 "-" "-" pid(any)
+18-10-2018 14:18:29 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:29.256207900 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 600 "-" "-" pid(any)
+18-10-2018 14:18:29 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:29.572570500 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 96 "-" "-" pid(any)
+18-10-2018 14:18:30 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:30.339443400 UTC] "POST /modules?api-version=2018-06-28 HTTP/1.1" 409 Conflict 45 "-" "-" pid(any)
+18-10-2018 14:18:30 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 14:18:30 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:30.381444600 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 14:18:31 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:31.063106400 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 14:18:31 warn: edgelet_utils::logging -- Container not found
+18-10-2018 14:18:31 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:31.188776700 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:36 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:36.641621600 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 909 "-" "-" pid(any)
+18-10-2018 14:18:36 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:36.659620 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28 HTTP/1.1"
+                    200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:37 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:37.114869100 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 600 "-" "-" pid(any)
+18-10-2018 14:18:37 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:37.427685900 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 96 "-" "-" pid(any)
+18-10-2018 14:18:37 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 14:18:37 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:37.455713300 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 14:18:37 warn: edgelet_utils::logging -- Container not found
+18-10-2018 14:18:37 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:37.784248200 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 14:18:37 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:37.878309 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28 HTTP/1.1"
+                    200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:43 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:43.338184 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28 HTTP/1.1"
+                    200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:43 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:43.346197600 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 909 "-" "-" pid(any)
+18-10-2018 14:18:43 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:43.792751400 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 600 "-" "-" pid(any)
+18-10-2018 14:18:44 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:44.102747500 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 96 "-" "-" pid(any)
+18-10-2018 14:18:44 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:44.136748400 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 14:18:44 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 14:18:44 warn: edgelet_utils::logging -- Container not found
+18-10-2018 14:18:44 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:44.493661500 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 14:18:44 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:44.583200200 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:49 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:49.678739 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 909 "-" "-" pid(any)
+18-10-2018 14:18:49 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:49.680738600 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:50 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:50.237105800 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 600 "-" "-" pid(any)
+18-10-2018 14:18:50 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:50.568900300 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 96 "-" "-" pid(any)
+18-10-2018 14:18:50 error: edgelet_http -- server connection error: (10.0.75.1:58337) An existing connection was forcibly closed by the remote host. (os error 10054)
+18-10-2018 14:18:50 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:50.603447600 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 14:18:50 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 14:18:50 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:50.670325700 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:50 warn: edgelet_utils::logging -- Container not found
+18-10-2018 14:18:50 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:50.942498700 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 14:18:51 info: edgelet_http::logging -- [work] - - - [2018-10-18 08:48:51.006541600 UTC] "POST /modules/%24edgeAgent/genid/636752993761078935/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 14:18:53 info: iotedged::windows -- iotedged service is shutting down
+18-10-2018 14:18:53 info: edgelet_core::watchdog -- Stopping edge runtime module edgeAgent
+18-10-2018 14:18:53 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:53.508434 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 909 "-" "-" pid(any)
+18-10-2018 14:18:53 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 14:18:53 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 08:48:53.532937300 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 14:18:56 info: iotedged -- Shutdown complete.
+18-10-2018 14:18:56 info: iotedged::windows -- Stopped iotedged service.
+18-10-2018 18:53:43 info: iotedged::app -- Starting Azure IoT Edge Security Daemon
+18-10-2018 18:53:43 info: iotedged::app -- Version - 1.0.3 (1ccb9b0728cd046f89a7d6eb0af000b3cbd7bb6a)
+18-10-2018 18:53:43 info: iotedged::app -- Using config file: C:\ProgramData\iotedge\config.yaml
+18-10-2018 18:53:43 info: iotedged::windows -- Starting iotedged service.
+18-10-2018 18:53:43 info: iotedged -- Using runtime network id azure-iot-edge
+18-10-2018 18:53:43 info: iotedged -- Initializing the module runtime...
+18-10-2018 18:53:43 info: iotedged -- Configuring C:\ProgramData\iotedge as the home directory.
+18-10-2018 18:53:43 info: iotedged -- Finished initializing the module runtime.
+18-10-2018 18:53:43 info: iotedged -- Configuring certificates...
+18-10-2018 18:53:44 info: iotedged -- Transparent gateway certificates not found, operating in quick start mode...
+18-10-2018 18:53:44 info: iotedged -- Initializing hsm...
+18-10-2018 18:53:44 info: iotedged -- Finished configuring certificates.
+18-10-2018 18:53:48 info: iotedged -- Detecting if configuration file has changed...
+18-10-2018 18:53:48 info: iotedged -- Finished initializing hsm.
+18-10-2018 18:53:48 info: iotedged -- Removing all modules...
+18-10-2018 18:53:48 info: iotedged -- Change to configuration file detected.
+18-10-2018 18:53:48 info: iotedged -- Finished removing modules.
+18-10-2018 18:53:49 info: iotedged -- Provisioning edge device...
+18-10-2018 18:53:49 info: iotedged -- Starting management API...
+18-10-2018 18:53:49 info: iotedged -- Finished provisioning edge device.
+18-10-2018 18:53:49 info: provisioning::provisioning -- Manually provisioning device "WTR_PMP_DEVICE" in hub "WTR-PMP-IOT-HUB.azure-devices.net"
+18-10-2018 18:53:49 info: iotedged -- Listening on http://10.0.75.1:15580/ with 1 thread for management API.
+18-10-2018 18:53:49 info: iotedged -- Starting workload API...
+18-10-2018 18:53:49 info: edgelet_core::watchdog -- Starting watchdog with 60 second frequency...
+18-10-2018 18:53:49 info: iotedged -- Listening on http://10.0.75.1:15581/ with 1 thread for workload API.
+18-10-2018 18:53:49 info: edgelet_core::watchdog -- Checking edge runtime status
+18-10-2018 18:53:49 info: edgelet_core::watchdog -- Creating and starting edge runtime module edgeAgent
+18-10-2018 18:53:49 info: edgelet_core::watchdog -- Updating identity for module $edgeAgent
+18-10-2018 18:53:49 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:49.849353200 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:52 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:52.336058400 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:53 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:53.193820300 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:53 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:53.975528600 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:55 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:55.083203400 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:55 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:55.929816500 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:56 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:56.630767 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:57 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:57.320131500 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:57 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:57.974526400 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:58 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:58.605345 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:59 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:59.184211600 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:53:59 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:23:59.997090300 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:54:01 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:01.358185100 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 14 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:54:09 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:09.513721400 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 449 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:54:12 info: edgelet_http::logging -- [work] - - - [2018-10-18 13:24:12.691418800 UTC] "POST /modules/%24edgeAgent/genid/636754655344849970/sign?api-version=2018-06-28 HTTP/1.1"
+                    200 OK 57 "-" "-" pid(any)
+18-10-2018 18:54:13 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:13.584410600 UTC] "GET /systeminfo?api-version=2018-06-28 HTTP/1.1" 200 OK 103 "-" "-" pid(any)
+18-10-2018 18:54:13 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:13.980524600 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 449 "-" "-" pid(any)
+18-10-2018 18:54:14 info: edgelet_http::logging -- [work] - - - [2018-10-18 13:24:14.834839700 UTC] "POST /modules/%24edgeAgent/genid/636754655344849970/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 18:54:15 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:15.110140200 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 210 "-" "-" pid(any)
+18-10-2018 18:54:15 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:15.371265300 UTC] "PUT /identities/%24edgeHub?api-version=2018-06-28 HTTP/1.1" 200 OK 98 "-" "-" pid(any)
+18-10-2018 18:54:15 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:15.483564200 UTC] "POST /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 103 "-" "-" pid(any)
+18-10-2018 18:54:16 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:16.806050 UTC] "POST /modules?api-version=2018-06-28 HTTP/1.1" 409 Conflict 45 "-" "-" pid(any)
+18-10-2018 18:54:18 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:18.184593800 UTC] "GET /modules/edgeAgent/logs?api-version=2018-06-28&follow=true&tail=all HTTP/1.1" 200 OK
+                    - "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:54:19 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:19.333503900 UTC] "POST /modules?api-version=2018-06-28 HTTP/1.1" 201 Created 921 "-" "-" pid(any)
+18-10-2018 18:54:19 warn: edgelet_utils::logging -- Container not found
+18-10-2018 18:54:19 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:19.622615800 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 18:54:19 info: edgelet_http::logging -- [work] - - - [2018-10-18 13:24:19.736666700 UTC] "POST /modules/%24edgeAgent/genid/636754655344849970/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 18:54:25 info: edgelet_http::logging -- [work] - - - [2018-10-18 13:24:25.228370300 UTC] "POST /modules/%24edgeAgent/genid/636754655344849970/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 18:54:25 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:25.229123200 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 831 "-" "-" pid(any)
+18-10-2018 18:54:25 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:25.486646300 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 313 "-" "-" pid(any)
+18-10-2018 18:54:25 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:25.607860800 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 103 "-" "-" pid(any)
+18-10-2018 18:54:25 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 18:54:25 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:25.745451900 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 18:54:25 warn: edgelet_utils::logging -- Container not found
+18-10-2018 18:54:26 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:26.000616200 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 18:54:26 info: edgelet_http::logging -- [work] - - - [2018-10-18 13:24:26.102770900 UTC] "POST /modules/%24edgeAgent/genid/636754655344849970/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 18:54:31 info: edgelet_http::logging -- [work] - - - [2018-10-18 13:24:31.312383 UTC] "POST /modules/%24edgeAgent/genid/636754655344849970/encrypt?api-version=2018-06-28 HTTP/1.1"
+                    200 OK 1585 "-" "-" pid(any)
+18-10-2018 18:54:31 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:31.328395 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 831 "-" "-" pid(any)
+18-10-2018 18:54:31 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:31.591333800 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 313 "-" "-" pid(any)
+18-10-2018 18:54:31 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:31.669909100 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 103 "-" "-" pid(any)
+18-10-2018 18:54:31 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:31.699911800 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 18:54:31 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 18:54:32 warn: edgelet_utils::logging -- Container not found
+18-10-2018 18:54:32 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:32.127000500 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 18:54:32 info: edgelet_http::logging -- [work] - - - [2018-10-18 13:24:32.222744600 UTC] "POST /modules/%24edgeAgent/genid/636754655344849970/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 18:54:37 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:37.286209400 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 831 "-" "-" pid(any)
+18-10-2018 18:54:37 info: edgelet_http::logging -- [work] - - - [2018-10-18 13:24:37.298216100 UTC] "POST /modules/%24edgeAgent/genid/636754655344849970/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 18:54:37 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:37.536405400 UTC] "GET /identities/?api-version=2018-06-28 HTTP/1.1" 200 OK 313 "-" "-" pid(any)
+18-10-2018 18:54:37 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:37.630165600 UTC] "PUT /identities/DataGenerator?api-version=2018-06-28 HTTP/1.1" 200 OK 103 "-" "-" pid(any)
+18-10-2018 18:54:37 error: edgelet_http -- server connection error: (10.0.75.1:52079) An existing connection was forcibly closed by the remote host. (os error 10054)
+18-10-2018 18:54:38 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:38.273391800 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 831 "-" "iotedge/0.1.0" pid(any)
+18-10-2018 18:54:38 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:38.389249800 UTC] "POST /modules?api-version=2018-06-28 HTTP/1.1" 409 Conflict 45 "-" "-" pid(any)
+18-10-2018 18:54:38 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:38.410062200 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 18:54:38 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 18:54:38 warn: edgelet_utils::logging -- Container not found
+18-10-2018 18:54:38 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:38.650745600 UTC] "POST /modules/edgeHub/start?api-version=2018-06-28 HTTP/1.1" 404 Not Found 33 "-" "-"
+                    pid(any)
+18-10-2018 18:54:38 info: edgelet_http::logging -- [work] - - - [2018-10-18 13:24:38.702739100 UTC] "POST /modules/%24edgeAgent/genid/636754655344849970/encrypt?api-version=2018-06-28
+                    HTTP/1.1" 200 OK 1585 "-" "-" pid(any)
+18-10-2018 18:54:43 info: edgelet_core::watchdog -- Stopping edge runtime module edgeAgent
+18-10-2018 18:54:43 info: iotedged::windows -- iotedged service is shutting down
+18-10-2018 18:54:43 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:43.551953100 UTC] "GET /modules?api-version=2018-06-28 HTTP/1.1" 200 OK 831 "-" "-" pid(any)
+18-10-2018 18:54:43 info: edgelet_http::logging -- [mgmt] - - - [2018-10-18 13:24:43.578961800 UTC] "POST /modules/edgeHub/stop?api-version=2018-06-28 HTTP/1.1" 304 Not Modified - "-" "-"
+                    pid(any)
+18-10-2018 18:54:43 warn: edgelet_utils::logging -- Container already in this state
+18-10-2018 18:54:45 info: iotedged::windows -- Stopped iotedged service.
+18-10-2018 18:54:45 info: iotedged -- Shutdown complete.

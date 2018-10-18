@@ -1,0 +1,257 @@
+[2018-10-18 13:24:09 : Starting Edge Agent
+[10/18/2018 01:24:09.548 PM] Edge Agent Main()
+2018-10-18 13:24:09.999 +00:00 [INF] - Starting module management agent.
+2018-10-18 13:24:10.400 +00:00 [INF] - Version - 1.0.3.17521421 (1ccb9b0728cd046f89a7d6eb0af000b3cbd7bb6a)
+2018-10-18 13:24:10.400 +00:00 [INF] -
+        █████╗ ███████╗██╗   ██╗██████╗ ███████╗
+       ██╔══██╗╚══███╔╝██║   ██║██╔══██╗██╔════╝
+       ███████║  ███╔╝ ██║   ██║██████╔╝█████╗
+       ██╔══██║ ███╔╝  ██║   ██║██╔══██╗██╔══╝
+       ██║  ██║███████╗╚██████╔╝██║  ██║███████╗
+       ╚═╝  ╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝
+
+ ██╗ ██████╗ ████████╗    ███████╗██████╗  ██████╗ ███████╗
+ ██║██╔═══██╗╚══██╔══╝    ██╔════╝██╔══██╗██╔════╝ ██╔════╝
+ ██║██║   ██║   ██║       █████╗  ██║  ██║██║  ███╗█████╗
+ ██║██║   ██║   ██║       ██╔══╝  ██║  ██║██║   ██║██╔══╝
+ ██║╚██████╔╝   ██║       ███████╗██████╔╝╚██████╔╝███████╗
+ ╚═╝ ╚═════╝    ╚═╝       ╚══════╝╚═════╝  ╚═════╝ ╚══════╝
+
+2018-10-18 13:24:10.752 +00:00 [INF] - Edge agent attempting to connect to IoT Hub via Amqp_Tcp_Only...
+2018-10-18 13:24:13.426 +00:00 [INF] - Created persistent store at /tmp/edgeAgent
+2018-10-18 13:24:13.637 +00:00 [INF] - Edge agent connected to IoT Hub via Amqp_Tcp_Only.
+2018-10-18 13:24:15.759 +00:00 [INF] - Plan execution started for deployment 3
+2018-10-18 13:24:15.804 +00:00 [INF] - Executing command: "Command Group: (
+  [Create module DataGenerator]
+  [Start module DataGenerator]
+)"
+2018-10-18 13:24:15.812 +00:00 [INF] - Executing command: "Create module DataGenerator"
+2018-10-18 13:24:16.826 +00:00 [ERR] - Executing command for operation ["create"] failed.
+Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling Create module DataGenerator: Conflict with current operation, StatusCode:409, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.CreateModuleAsync(ModuleSpec moduleSpec) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 89
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+2018-10-18 13:24:16.975 +00:00 [ERR] - Executing command for operation ["Command Group: (
+  [Create module DataGenerator]
+  [Start module DataGenerator]
+)"] failed.
+Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling Create module DataGenerator: Conflict with current operation, StatusCode:409, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.CreateModuleAsync(ModuleSpec moduleSpec) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 89
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+2018-10-18 13:24:16.983 +00:00 [ERR] - Step failed in deployment 3, continuing execution. Failure when running command Command Group: (
+  [Create module DataGenerator]
+  [Start module DataGenerator]
+). Will retry in 00s.
+2018-10-18 13:24:16.987 +00:00 [INF] - Executing command: "Command Group: (
+  [Create module edgeHub]
+  [Start module edgeHub]
+)"
+2018-10-18 13:24:16.988 +00:00 [INF] - Executing command: "Create module edgeHub"
+2018-10-18 13:24:19.350 +00:00 [INF] - Executing command: "Start module edgeHub"
+2018-10-18 13:24:19.658 +00:00 [ERR] - Executing command for operation ["start"] failed.
+Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+2018-10-18 13:24:19.660 +00:00 [ERR] - Executing command for operation ["Command Group: (
+  [Create module edgeHub]
+  [Start module edgeHub]
+)"] failed.
+Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+2018-10-18 13:24:19.661 +00:00 [ERR] - Step failed in deployment 3, continuing execution. Failure when running command Command Group: (
+  [Create module edgeHub]
+  [Start module edgeHub]
+). Will retry in 00s.
+2018-10-18 13:24:19.664 +00:00 [INF] - Plan execution ended for deployment 3
+2018-10-18 13:24:19.672 +00:00 [ERR] - Edge agent plan execution failed.
+System.AggregateException: One or more errors occurred. (Error calling Create module DataGenerator: Conflict with current operation) (Error calling start module edgeHub: Container not found) ---> Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException: Error calling Create module DataGenerator: Conflict with current operation
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.CreateModuleAsync(ModuleSpec moduleSpec) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 89
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86
+   --- End of inner exception stack trace ---
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.<>c.<ExecuteAsync>b__7_0(List`1 f) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 114
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 115
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Agent.ReconcileAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/Agent.cs:line 176
+---> (Inner Exception #0) Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling Create module DataGenerator: Conflict with current operation, StatusCode:409, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.CreateModuleAsync(ModuleSpec moduleSpec) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 89
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86<---
+
+---> (Inner Exception #1) Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86<---
+
+2018-10-18 13:24:19.766 +00:00 [WRN] - Reconcile failed because of the an exception
+System.AggregateException: One or more errors occurred. (Error calling Create module DataGenerator: Conflict with current operation) (Error calling start module edgeHub: Container not found) ---> Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException: Error calling Create module DataGenerator: Conflict with current operation
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.CreateModuleAsync(ModuleSpec moduleSpec) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 89
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86
+   --- End of inner exception stack trace ---
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.<>c.<ExecuteAsync>b__7_0(List`1 f) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 114
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 115
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Agent.ReconcileAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/Agent.cs:line 176
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Agent.ReconcileAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/Agent.cs:line 187
+---> (Inner Exception #0) Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling Create module DataGenerator: Conflict with current operation, StatusCode:409, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.CreateModuleAsync(ModuleSpec moduleSpec) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 89
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86<---
+
+---> (Inner Exception #1) Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86<---
+
+2018-10-18 13:24:20.179 +00:00 [INF] - Updated reported properties
+2018-10-18 13:24:25.663 +00:00 [INF] - Plan execution started for deployment 3
+2018-10-18 13:24:25.682 +00:00 [INF] - Executing command: "Command Group: (
+  [Stop module edgeHub]
+  [Start module edgeHub]
+  [Saving edgeHub to store]
+)"
+2018-10-18 13:24:25.683 +00:00 [INF] - Executing command: "Stop module edgeHub"
+2018-10-18 13:24:25.755 +00:00 [INF] - Executing command: "Start module edgeHub"
+2018-10-18 13:24:26.008 +00:00 [ERR] - Executing command for operation ["start"] failed.
+Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+2018-10-18 13:24:26.013 +00:00 [ERR] - Executing command for operation ["Command Group: (
+  [Stop module edgeHub]
+  [Start module edgeHub]
+  [Saving edgeHub to store]
+)"] failed.
+Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+2018-10-18 13:24:26.032 +00:00 [ERR] - Step failed in deployment 3, continuing execution. Failure when running command Command Group: (
+  [Stop module edgeHub]
+  [Start module edgeHub]
+  [Saving edgeHub to store]
+). Will retry in 00s.
+2018-10-18 13:24:26.032 +00:00 [INF] - Plan execution ended for deployment 3
+2018-10-18 13:24:26.032 +00:00 [ERR] - Edge agent plan execution failed.
+System.AggregateException: One or more errors occurred. (Error calling start module edgeHub: Container not found) ---> Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException: Error calling start module edgeHub: Container not found
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86
+   --- End of inner exception stack trace ---
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.<>c.<ExecuteAsync>b__7_0(List`1 f) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 114
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 115
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Agent.ReconcileAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/Agent.cs:line 176
+---> (Inner Exception #0) Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86<---
+
+2018-10-18 13:24:26.110 +00:00 [WRN] - Reconcile failed because of the an exception
+System.AggregateException: One or more errors occurred. (Error calling start module edgeHub: Container not found) ---> Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException: Error calling start module edgeHub: Container not found
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86
+   --- End of inner exception stack trace ---
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.<>c.<ExecuteAsync>b__7_0(List`1 f) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 114
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 115
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Agent.ReconcileAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/Agent.cs:line 176
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Agent.ReconcileAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/Agent.cs:line 187
+---> (Inner Exception #0) Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86<---
+
+2018-10-18 13:24:26.271 +00:00 [INF] - Updated reported properties
+2018-10-18 13:24:31.673 +00:00 [INF] - Plan execution started for deployment 3
+2018-10-18 13:24:31.683 +00:00 [INF] - Executing command: "Command Group: (
+  [Stop module edgeHub]
+  [Start module edgeHub]
+  [Saving edgeHub to store]
+)"
+2018-10-18 13:24:31.683 +00:00 [INF] - Executing command: "Stop module edgeHub"
+2018-10-18 13:24:31.706 +00:00 [INF] - Executing command: "Start module edgeHub"
+2018-10-18 13:24:32.131 +00:00 [ERR] - Executing command for operation ["start"] failed.
+Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+2018-10-18 13:24:32.134 +00:00 [ERR] - Executing command for operation ["Command Group: (
+  [Stop module edgeHub]
+  [Start module edgeHub]
+  [Saving edgeHub to store]
+)"] failed.
+Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+2018-10-18 13:24:32.135 +00:00 [ERR] - Step failed in deployment 3, continuing execution. Failure when running command Command Group: (
+  [Stop module edgeHub]
+  [Start module edgeHub]
+  [Saving edgeHub to store]
+). Will retry in 00s.
+2018-10-18 13:24:32.135 +00:00 [INF] - Plan execution ended for deployment 3
+2018-10-18 13:24:32.135 +00:00 [ERR] - Edge agent plan execution failed.
+System.AggregateException: One or more errors occurred. (Error calling start module edgeHub: Container not found) ---> Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException: Error calling start module edgeHub: Container not found
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86
+   --- End of inner exception stack trace ---
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.<>c.<ExecuteAsync>b__7_0(List`1 f) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 114
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 115
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Agent.ReconcileAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/Agent.cs:line 176
+---> (Inner Exception #0) Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86<---
+
+2018-10-18 13:24:32.235 +00:00 [WRN] - Reconcile failed because of the an exception
+System.AggregateException: One or more errors occurred. (Error calling start module edgeHub: Container not found) ---> Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException: Error calling start module edgeHub: Container not found
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86
+   --- End of inner exception stack trace ---
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.<>c.<ExecuteAsync>b__7_0(List`1 f) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 114
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 115
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Agent.ReconcileAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/Agent.cs:line 176
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Agent.ReconcileAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/Agent.cs:line 187
+---> (Inner Exception #0) Microsoft.Azure.Devices.Edge.Agent.Edgelet.EdgeletCommunicationException- Message:Error calling start module edgeHub: Container not found, StatusCode:404, at:   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.Execute[T](Func`1 func, String operation) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 194
+   at Microsoft.Azure.Devices.Edge.Agent.Edgelet.ModuleManagementHttpClient.StartModuleAsync(String name) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Edgelet/ModuleManagementHttpClient.cs:line 142
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.Commands.GroupCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/commands/GroupCommand.cs:line 36
+   at Microsoft.Azure.Devices.Edge.Agent.Core.LoggingCommandFactory.LoggingCommand.ExecuteAsync(CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/LoggingCommandFactory.cs:line 61
+   at Microsoft.Azure.Devices.Edge.Agent.Core.PlanRunners.OrderedRetryPlanRunner.ExecuteAsync(Int64 deploymentId, Plan plan, CancellationToken token) in /home/vsts/work/1/s/edge-agent/src/Microsoft.Azure.Devices.Edge.Agent.Core/planrunners/OrdererdRetryPlanRunner.cs:line 86<---
